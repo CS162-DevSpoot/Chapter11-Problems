@@ -3,16 +3,16 @@
     internal class FuelGauageClass
     {
         private int FuelLevel = 0;
-        private int FuelMaxLevel {get; init;}
+        public int FuelMaxLevel {get; init;}
 
         public FuelGauageClass(int maxLevel){
             FuelLevel = maxLevel;
             FuelMaxLevel = maxLevel;
         }
 
-        public int consumeFuel(){
+        public int consumeFuel(decimal milesDriven){
             if(FuelLevel > 0){
-                FuelLevel -= 1;
+                FuelLevel -= milesDriven/24;
                 return FuelLevel;
             }else{
                 FuelLevel = 0;

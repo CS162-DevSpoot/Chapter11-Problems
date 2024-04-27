@@ -36,7 +36,7 @@
             MonthNumber = monthClass.MonthNumber;
         }
 
-        public ToString(){
+        public override string ToString(){
             return (Month)MonthNumber.ToString();
         }
 

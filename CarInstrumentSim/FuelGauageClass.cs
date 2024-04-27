@@ -10,8 +10,19 @@
             FuelMaxLevel = maxLevel;
         }
 
-        public void consumeFuel(){
-            FuelLevel -= 1;
+        public int consumeFuel(){
+            if(FuelLevel > 0){
+                FuelLevel -= 1;
+                return FuelLevel;
+            }else{
+                FuelLevel = 0;
+                return 0;
+            }
+            
+        }
+
+        public int getFuelLevels(){
+            return FuelLevel;
         }
     }
 }

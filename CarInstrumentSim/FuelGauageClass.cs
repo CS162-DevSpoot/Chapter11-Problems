@@ -2,17 +2,17 @@
 {
     internal class FuelGauageClass
     {
-        private int FuelLevel = 0;
-        public int FuelMaxLevel {get; init;}
+        private double FuelLevel = 0;
+        public double FuelMaxLevel {get; init;}
 
-        public FuelGauageClass(int maxLevel){
+        public FuelGauageClass(double maxLevel){
             FuelLevel = maxLevel;
             FuelMaxLevel = maxLevel;
         }
 
-        public int consumeFuel(decimal milesDriven){
+        public double consumeFuel(double milesDriven){
             if(FuelLevel > 0){
-                FuelLevel -= milesDriven/24;
+                FuelLevel -= milesDriven/24.00;
                 return FuelLevel;
             }else{
                 FuelLevel = 0;
@@ -21,7 +21,17 @@
             
         }
 
-        public int getFuelLevels(){
+        public void refuel()
+        {
+            if(FuelLevel == FuelMaxLevel)
+            {
+                return;
+            }
+
+            FuelLevel += 1;
+        }
+
+        public double getFuelLevels(){
             return FuelLevel;
         }
     }

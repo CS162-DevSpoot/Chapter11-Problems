@@ -13,7 +13,7 @@
 
         public MonthClass(){
             MonthNumber =1;
-            MonthName = (Month)1.ToString();
+            MonthName = ((Month)1).ToString();
         }
 
         public MonthClass(int monthNumber){
@@ -24,11 +24,11 @@
             }
 
             DateTime newDT = new DateTime(2024, MonthNumber, 1);
-            MonthName = (Month)monthNumber.ToString();
+            MonthName = ((Month)monthNumber).ToString();
         }
 
         public MonthClass(string monthName){
-            MonthName = (Month)monthName.ToString();
+            MonthName = monthName;
         }
 
         public MonthClass(MonthClass monthClass){
@@ -37,10 +37,10 @@
         }
 
         public override string ToString(){
-            return (Month)MonthNumber.ToString();
+            return ((Month)MonthNumber).ToString();
         }
 
-        public IsGreaterThan(MonthClass monthClass){
+        public bool IsGreaterThan(MonthClass monthClass){
             if(monthClass.MonthNumber < MonthNumber){
                 return true;
             }else{
@@ -48,7 +48,7 @@
             }
         }
 
-        public IsLessThan(MonthClass monthClass){
+        public bool IsLessThan(MonthClass monthClass){
             if(monthClass.MonthNumber > MonthNumber){
                 return true;
             }else{

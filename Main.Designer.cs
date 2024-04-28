@@ -82,6 +82,7 @@
             exitButton.TabIndex = 4;
             exitButton.Text = "EXIT";
             exitButton.UseVisualStyleBackColor = false;
+            exitButton.Click += exitButton_Click;
             // 
             // Main
             // 

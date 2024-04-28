@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            startButton = new Button();
             refuelButton = new Button();
             groupBox1 = new GroupBox();
             odemeterLabel1 = new Label();
             fuelLabel1 = new Label();
             fuelBar_progressBar = new ProgressBar();
             closeButton = new Button();
-            startButton = new Button();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -52,6 +52,16 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(264, 140);
             panel1.TabIndex = 0;
+            // 
+            // startButton
+            // 
+            startButton.BackColor = Color.SpringGreen;
+            startButton.Location = new Point(232, 112);
+            startButton.Name = "startButton";
+            startButton.Size = new Size(27, 23);
+            startButton.TabIndex = 5;
+            startButton.UseVisualStyleBackColor = false;
+            startButton.Click += start;
             // 
             // refuelButton
             // 
@@ -98,6 +108,8 @@
             fuelBar_progressBar.Location = new Point(3, 3);
             fuelBar_progressBar.Maximum = 15;
             fuelBar_progressBar.Name = "fuelBar_progressBar";
+            fuelBar_progressBar.RightToLeft = RightToLeft.No;
+            fuelBar_progressBar.RightToLeftLayout = true;
             fuelBar_progressBar.Size = new Size(258, 16);
             fuelBar_progressBar.TabIndex = 1;
             fuelBar_progressBar.Value = 15;
@@ -112,16 +124,6 @@
             closeButton.Text = "Close";
             closeButton.UseVisualStyleBackColor = false;
             closeButton.Click += closeButton_Click;
-            // 
-            // startButton
-            // 
-            startButton.BackColor = Color.SpringGreen;
-            startButton.Location = new Point(232, 112);
-            startButton.Name = "startButton";
-            startButton.Size = new Size(27, 23);
-            startButton.TabIndex = 5;
-            startButton.UseVisualStyleBackColor = false;
-            startButton.Click += start;
             // 
             // CarDemo
             // 

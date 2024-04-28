@@ -12,7 +12,12 @@ namespace CS162_Chapter11_Problems
         private void carInstrumentButton_Click(object sender, EventArgs e)
         {
             Form carDemo = new CarDemo();
-            carDemo.ShowDialog();
+            carDemo.Show();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

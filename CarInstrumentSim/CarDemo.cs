@@ -1,4 +1,6 @@
-﻿namespace CS162_Chapter11_Problems.PlaylistApplication
+﻿using CS162_Chapter11_Problems.CarInstrumentSim;
+
+namespace CS162_Chapter11_Problems.PlaylistApplication
 {
     public partial class CarDemo : Form
     {
@@ -7,6 +9,39 @@
             InitializeComponent();
         }
 
+        FuelGauageClass? fuelGauge = null;
+        OdemterClass? odemeter = null;
+        int MaxFuel = 15;
+
+        public void onForm_Load(object sender, EventArgs e)
+        {
+            fuelGauge = new FuelGauageClass(MaxFuel);
+            fuelBar_progressBar.Maximum = MaxFuel;
+            fuelBar_progressBar.Value = 15;
+
+            odemeter = new OdemterClass();
+
+        }
+
+        bool started = false;
+        public void start(object sender, EventArgs e)
+        {
+            if (started) { return; }
+            while (fuelGauge.getFuelLevels() > 0)
+            {
+                odemeter.updateMileage();
+                odemeterLabel1.Text = (odemeter.getCurrentMileage()).ToString();
+                fuelGauge.consumeFuel(1);
+                fuelBar_progressBar.Value = (int)fuelGauge.getFuelLevels();
+                fuelLabel1.Text = $"{(fuelGauge.getFuelLevels()).ToString("f2")}/{MaxFuel}";
+                wait(0020);
+            }
+        }
+
+        public void refuelButton_Click(object sender, EventArgs e)
+        {
+            fuelGauge.refuel();
+        }
 
 
         /*
@@ -34,6 +69,11 @@
             {
                 Application.DoEvents();
             }
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

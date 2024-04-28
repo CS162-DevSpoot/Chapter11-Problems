@@ -9,7 +9,7 @@
 
         public int Fine {get; init;}
         public int BadgeNumber {get; init;}
-        public int OfficerName {get; init;}
+        public string OfficerName {get; init;}
         
         public ParkingTicketClass(string make, string model, string color, string lp, int fine, int badgeNumber, string officerName){
             Make = make;

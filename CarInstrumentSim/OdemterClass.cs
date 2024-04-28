@@ -4,7 +4,7 @@
     {
         private int Mileage = 0;
 
-        public void updateMileage(){
+        public int updateMileage(){
             if(Mileage == 999999){
                 Mileage = 0;
                 return 0;

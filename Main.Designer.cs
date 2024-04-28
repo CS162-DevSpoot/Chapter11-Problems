@@ -52,6 +52,7 @@
             carInstrumentButton.TabIndex = 1;
             carInstrumentButton.Text = "Car Sim";
             carInstrumentButton.UseVisualStyleBackColor = true;
+            carInstrumentButton.Click += carInstrumentButton_Click;
             // 
             // parkingSimButton
             // 

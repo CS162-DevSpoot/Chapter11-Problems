@@ -28,6 +28,12 @@
                 return;
             }
 
+            if((FuelLevel + 1) > 15)
+            {
+                FuelLevel = 15;
+                return;
+            }
+
             FuelLevel += 1;
         }
 

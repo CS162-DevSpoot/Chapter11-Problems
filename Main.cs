@@ -1,3 +1,4 @@
+using CS162_Chapter11_Problems.ParkingTicketSim;
 using CS162_Chapter11_Problems.PlaylistApplication;
 
 namespace CS162_Chapter11_Problems
@@ -18,6 +19,12 @@ namespace CS162_Chapter11_Problems
         private void exitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void parkingSimButton_Click(object sender, EventArgs e)
+        {
+            Form ticketDemo = new TicketDemo();
+            ticketDemo.Show();
         }
     }
 }

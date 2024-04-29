@@ -1,6 +1,6 @@
 ﻿namespace CS162_Chapter11_Problems.ParkingTicketSim
 {
-    internal class ParkedCarClass
+    public class ParkedCarClass
     {
         public string Make {get; init;}
         public string Model {get; init;}

@@ -62,6 +62,7 @@
             parkingSimButton.TabIndex = 2;
             parkingSimButton.Text = "Parking Sim";
             parkingSimButton.UseVisualStyleBackColor = true;
+            parkingSimButton.Click += parkingSimButton_Click;
             // 
             // playlistButton
             // 

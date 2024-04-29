@@ -1,6 +1,6 @@
 ﻿namespace CS162_Chapter11_Problems.ParkingTicketSim
 {
-    internal class PoliceOfficerClass
+    public class PoliceOfficerClass
     {
         public int BadgeNumber {get; init;}
         public string Name {get; init;}

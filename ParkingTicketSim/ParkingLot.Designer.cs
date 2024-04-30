@@ -471,7 +471,7 @@
             // 
             // cite_Button0
             // 
-            cite_Button0.BackColor = Color.Gold;
+            cite_Button0.BackColor = Color.DarkGoldenrod;
             cite_Button0.Enabled = false;
             cite_Button0.Location = new Point(21, 222);
             cite_Button0.Name = "cite_Button0";
@@ -479,10 +479,11 @@
             cite_Button0.TabIndex = 9;
             cite_Button0.Text = "Cite 🎫";
             cite_Button0.UseVisualStyleBackColor = false;
+            cite_Button0.Click += citeButton_Cliked;
             // 
             // cite_Button1
             // 
-            cite_Button1.BackColor = Color.Gold;
+            cite_Button1.BackColor = Color.DarkGoldenrod;
             cite_Button1.Enabled = false;
             cite_Button1.Location = new Point(152, 222);
             cite_Button1.Name = "cite_Button1";
@@ -490,6 +491,7 @@
             cite_Button1.TabIndex = 11;
             cite_Button1.Text = "Cite 🎫";
             cite_Button1.UseVisualStyleBackColor = false;
+            cite_Button1.Click += citeButton_Cliked;
             // 
             // examine_Button1
             // 
@@ -504,7 +506,7 @@
             // 
             // cite_Button2
             // 
-            cite_Button2.BackColor = Color.Gold;
+            cite_Button2.BackColor = Color.DarkGoldenrod;
             cite_Button2.Enabled = false;
             cite_Button2.Location = new Point(283, 222);
             cite_Button2.Name = "cite_Button2";
@@ -512,6 +514,7 @@
             cite_Button2.TabIndex = 13;
             cite_Button2.Text = "Cite 🎫";
             cite_Button2.UseVisualStyleBackColor = false;
+            cite_Button2.Click += citeButton_Cliked;
             // 
             // examine_Button2
             // 
@@ -526,7 +529,7 @@
             // 
             // cite_Button3
             // 
-            cite_Button3.BackColor = Color.Gold;
+            cite_Button3.BackColor = Color.DarkGoldenrod;
             cite_Button3.Enabled = false;
             cite_Button3.Location = new Point(414, 222);
             cite_Button3.Name = "cite_Button3";
@@ -534,6 +537,7 @@
             cite_Button3.TabIndex = 15;
             cite_Button3.Text = "Cite 🎫";
             cite_Button3.UseVisualStyleBackColor = false;
+            cite_Button3.Click += citeButton_Cliked;
             // 
             // examine_Button3
             // 
@@ -548,7 +552,7 @@
             // 
             // cite_Button4
             // 
-            cite_Button4.BackColor = Color.Gold;
+            cite_Button4.BackColor = Color.DarkGoldenrod;
             cite_Button4.Enabled = false;
             cite_Button4.Location = new Point(546, 222);
             cite_Button4.Name = "cite_Button4";
@@ -556,6 +560,7 @@
             cite_Button4.TabIndex = 17;
             cite_Button4.Text = "Cite 🎫";
             cite_Button4.UseVisualStyleBackColor = false;
+            cite_Button4.Click += citeButton_Cliked;
             // 
             // examine_Button4
             // 
@@ -570,7 +575,7 @@
             // 
             // cite_Button5
             // 
-            cite_Button5.BackColor = Color.Gold;
+            cite_Button5.BackColor = Color.Goldenrod;
             cite_Button5.Enabled = false;
             cite_Button5.Location = new Point(677, 222);
             cite_Button5.Name = "cite_Button5";
@@ -578,6 +583,7 @@
             cite_Button5.TabIndex = 19;
             cite_Button5.Text = "Cite 🎫";
             cite_Button5.UseVisualStyleBackColor = false;
+            cite_Button5.Click += citeButton_Cliked;
             // 
             // examine_Button5
             // 

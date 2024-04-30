@@ -21,7 +21,7 @@
         public ParkingTicketClass issueTicket(ParkedCarClass parkedCar, double hoursOver){
             int fine = 25 + (int)(25*hoursOver);
 
-            return new ParkingTicketClass(parkedCar.Make, parkedCar.Model, parkedCar.Color, parkedCar.LicensePlate, fine, BadgeNumber, Name);
+            return new ParkingTicketClass(parkedCar, fine, this);
         }
     }
 }

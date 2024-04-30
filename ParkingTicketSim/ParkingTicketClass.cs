@@ -11,14 +11,14 @@
         public int BadgeNumber {get; init;}
         public string OfficerName {get; init;}
         
-        public ParkingTicketClass(string make, string model, string color, string lp, int fine, int badgeNumber, string officerName){
-            Make = make;
-            Model = model;
-            Color = color;
-            LicensePlate = lp;
+        public ParkingTicketClass(ParkedCarClass parkedCar, int fine, PoliceOfficerClass LEO){
+            Make = parkedCar.Make;
+            Model = parkedCar.Model;
+            Color = parkedCar.Color;
+            LicensePlate = parkedCar.LicensePlate;
             Fine =  fine; 
-            BadgeNumber = badgeNumber;
-            OfficerName = officerName;
+            BadgeNumber = LEO.BadgeNumber;
+            OfficerName = LEO.Name;
         }
 
     }

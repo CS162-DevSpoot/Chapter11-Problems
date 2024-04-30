@@ -37,6 +37,7 @@
             // 
             // monthButton
             // 
+            monthButton.Enabled = false;
             monthButton.Location = new Point(12, 12);
             monthButton.Name = "monthButton";
             monthButton.Size = new Size(122, 23);
@@ -72,6 +73,7 @@
             playlistButton.TabIndex = 3;
             playlistButton.Text = "Playlist Demo";
             playlistButton.UseVisualStyleBackColor = true;
+            playlistButton.Click += playlistButton_Click;
             // 
             // exitButton
             // 

@@ -26,5 +26,11 @@ namespace CS162_Chapter11_Problems
             Form ticketDemo = new TicketDemo();
             ticketDemo.Show();
         }
+
+        private void playlistButton_Click(object sender, EventArgs e)
+        {
+            Form playListDemo = new PlaylistDemo();
+            playListDemo.Show();
+        }
     }
 }
